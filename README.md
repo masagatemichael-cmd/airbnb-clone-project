@@ -128,3 +128,50 @@ Security is a critical aspect of the Airbnb Clone project. Since the platform in
 
 ### 🛡️ Summary
 By combining authentication, authorization, encryption, and rate limiting, this project ensures that user data and financial transactions remain secure. Security is not an afterthought — it’s built into every layer of the system.
+
+## ⚙️ CI/CD Pipeline
+
+### What Is CI/CD?
+**Continuous Integration (CI)** and **Continuous Deployment (CD)** are essential development practices that automate the process of building, testing, and deploying code.  
+They ensure that every code change is verified automatically, helping maintain code quality and speeding up feature delivery.
+
+- **Continuous Integration (CI):** Automatically tests and integrates new code into the main branch whenever a developer pushes updates.  
+- **Continuous Deployment (CD):** Automatically deploys verified code to production or staging environments after passing tests.
+
+---
+
+### Why CI/CD Is Important
+Implementing a CI/CD pipeline in the Airbnb Clone project:
+- Ensures **code reliability** by catching bugs early through automated testing.  
+- Reduces **deployment errors** and manual steps.  
+- Speeds up **development cycles**, allowing faster iteration and feature delivery.  
+- Promotes **team collaboration** — everyone’s code is continuously integrated and tested.  
+- Supports **scalability**, making it easier to handle more frequent updates as the project grows.
+
+---
+
+### 🧰 Tools and Technologies
+
+| Tool | Purpose |
+|------|----------|
+| **GitHub Actions** | Automates CI/CD workflows directly from GitHub (e.g., run tests, linting, and deployments). |
+| **Docker** | Packages the app into lightweight containers for consistent environments across development, staging, and production. |
+| **Render / Vercel** | Handles automatic deployment of backend (Render) and frontend (Vercel) whenever new code is merged. |
+| **Jest / Cypress** | Used for automated testing during the CI phase to ensure functionality and UI consistency. |
+| **ESLint / Prettier** | Ensures code formatting and style consistency during builds. |
+
+---
+
+### 🛠️ Example CI/CD Workflow (Using GitHub Actions)
+1. Developer pushes new code to GitHub.  
+2. GitHub Actions triggers an automated workflow:
+   - Runs tests and code linting.  
+   - Builds Docker containers for frontend and backend.  
+   - Deploys successful builds to staging or production.  
+3. If tests fail, the deployment is halted — ensuring only stable code reaches users.
+
+---
+
+### 🚀 Summary
+A CI/CD pipeline brings **automation, consistency, and speed** to the Airbnb Clone project’s development and deployment process.  
+It minimizes manual intervention, maintains quality, and allows the team to ship new features with confidence.
