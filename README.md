@@ -8,7 +8,7 @@ This project is an Airbnb clone that allows users to book, list, and manage rent
 - Practice authentication, database design, and API development
 - Learn deployment and DevOps basics
 
-## 🧰 Tech Stack
+## 🧰 Technology Stack
 - **Frontend:** React, Next.js, Tailwind CSS
 - **Backend:** Node.js, Express
 - **Database:** MongoDB (Mongoose)
@@ -16,3 +16,5 @@ This project is an Airbnb clone that allows users to book, list, and manage rent
 - **Deployment:** Vercel / Render
 
 - ## Team Roles
+
+- ## Database Design
