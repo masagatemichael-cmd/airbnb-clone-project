@@ -14,3 +14,5 @@ This project is an Airbnb clone that allows users to book, list, and manage rent
 - **Database:** MongoDB (Mongoose)
 - **Authentication:** JWT / NextAuth
 - **Deployment:** Vercel / Render
+
+- ## Team Roles
