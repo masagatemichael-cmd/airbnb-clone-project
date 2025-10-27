@@ -77,3 +77,54 @@ Users can search for properties using filters such as price range, location, ame
 
 ### 🖥️ Admin Dashboard (Optional / Future Feature)
 An administrative interface allows admins to monitor user activity, manage listings, and handle reports or disputes. This ensures the platform remains fair, secure, and well-moderated as it scales.
+
+## 🔒 API Security
+
+Security is a critical aspect of the Airbnb Clone project. Since the platform involves sensitive user data, financial transactions, and authentication, strong security measures are implemented to maintain trust and protect the system from malicious attacks.
+
+---
+
+### 🧠 Authentication
+**Purpose:** Verifies the identity of users before granting access to protected resources.  
+**Implementation:** The project uses **JWT (JSON Web Tokens)** or **NextAuth.js** to securely handle user login sessions. Passwords are encrypted using modern hashing algorithms (e.g., bcrypt).  
+**Why It Matters:** Prevents unauthorized access to accounts and ensures that only legitimate users can perform actions like booking properties or updating profiles.
+
+---
+
+### 🧾 Authorization
+**Purpose:** Controls what authenticated users can do within the system.  
+**Implementation:** Role-based access control (RBAC) ensures that only hosts can manage properties, guests can make bookings, and admins can monitor the platform.  
+**Why It Matters:** Prevents users from accessing or modifying resources they don’t own — protecting data integrity and maintaining fair usage of the system.
+
+---
+
+### 🚦 Rate Limiting
+**Purpose:** Restricts the number of requests a user or IP address can make within a given timeframe.  
+**Implementation:** Middleware such as **express-rate-limit** (for Node.js/Express) helps prevent brute-force login attempts and denial-of-service attacks.  
+**Why It Matters:** Protects the API from abuse and ensures stable performance for all users.
+
+---
+
+### 🔐 Data Encryption
+**Purpose:** Secures sensitive data both in transit and at rest.  
+**Implementation:** Uses **HTTPS (TLS/SSL)** to encrypt network communication, and sensitive information (like passwords and payment tokens) is stored in encrypted form in the database.  
+**Why It Matters:** Protects user data from interception or leaks during communication between the client and the server.
+
+---
+
+### 💳 Payment Security
+**Purpose:** Ensures that all financial transactions are safe and verified.  
+**Implementation:** Integrates with trusted payment gateways (e.g., Stripe or PayPal) that comply with **PCI-DSS** standards. Tokenization is used to avoid storing card details on the platform.  
+**Why It Matters:** Prevents financial fraud, secures users’ payment information, and builds trust with customers.
+
+---
+
+### 🧰 Additional Measures
+- **Input Validation:** Prevents SQL injection and XSS (Cross-Site Scripting) attacks.  
+- **CORS Configuration:** Ensures only trusted domains can make API requests.  
+- **Environment Variables:** Sensitive credentials (like API keys) are stored securely in `.env` files, not in the codebase.
+
+---
+
+### 🛡️ Summary
+By combining authentication, authorization, encryption, and rate limiting, this project ensures that user data and financial transactions remain secure. Security is not an afterthought — it’s built into every layer of the system.
